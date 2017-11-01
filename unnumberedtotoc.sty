@@ -1,0 +1,122 @@
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version
+% 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+% This work has the LPPL maintenance status `maintained'.
+% 
+% The Current Maintainer of this work is Johannes Böttcher
+%
+% This work consists of the file unnumberedtotoc.sty
+% Copyright 2014 - 2016 Johannes Böttcher
+% This is an alpha Version. Please be aware that there is
+% absolutely no warranty and use this package at your own risk
+% 
+% Functionality and implementation heavily based on KOMA-script
+
+\ProvidesPackage{unnumberedtotoc}[2016/10/30 v.03 unnumbered chapters and sections to toc]
+\RequirePackage{etoolbox}
+
+
+\newbool{@indentunnumbered}
+\newbool{@silent}
+\DeclareOption{indentunnumbered}{\booltrue{@indentunnumbered}}
+\DeclareOption{silent}{\booltrue{@silent}}
+\ProcessOptions*
+\ifundef{\KOMAClassName}{%
+	\ifbool{@silent}{}{%
+		\PackageWarningNoLine{unnumberedtotoc}{%
+			^^J adding some features also provided by KOMA-script classes.%
+			^^J Consider switching, as there are much more features with KOMA.%
+			^^J Found at: https://github.com/johannesbottcher/unnumberedtotoc%
+		}%
+	}
+	\@ifclassloaded{memoir}{
+		\typeout{Sorry, this wasn't tested with `memoir'}
+	}{
+	}
+}{\PackageInfo{unnumberedtotoc}{You are using a KOMA
+	class. Not much to do for me here. Setting the options
+and that's it}
+\ifbool{@indentunnumbered}{%
+	\@ifpackageloaded{tocbasic}{%
+		\setuptoc{toc}{numberline}%
+	}{}}{}
+	\endinput
+}
+\RequirePackage{xparse}
+
+\AtBeginDocument{\providecommand{\MakeMarkcase}{}}
+
+\ifbool{@indentunnumbered}{%
+	\AtBeginDocument{%
+		\@ifpackageloaded{tocbibind}{%
+			\PackageWarningNoLine{unnumberedtotoc}{List
+			entries won't be indented}
+		}{}
+	}
+	\providecommand{\nonumberline}{\numberline{}}
+}{%
+	\providecommand{\nonumberline}{}
+}
+\ProvideDocumentCommand{\addxcontentsline}{ m m m }{\addcontentsline{#1}{#2}{\nonumberline#3}}
+
+\ProvideDocumentCommand{\addparttocentry}{ m }{%
+	\addxcontentsline{toc}{part}{#1}%
+}
+\ProvideDocumentCommand{\addchaptertocentry}{ m }{%
+	\addxcontentsline{toc}{chapter}{#1}%
+}
+\ProvideDocumentCommand{\addsectiontocentry}{ m }{%
+	\addxcontentsline{toc}{section}{#1}%
+}
+\ProvideDocumentCommand{\addpart}{ s o m }{%
+	\part*{#3}%
+	\markboth{}{}
+	\IfBooleanTF{#1}{
+	}{
+		\IfNoValueTF{#2}{
+			\addparttocentry{#3}
+			\markboth{\MakeMarkcase{#3}}{}%
+		}{%
+			\addparttocentry{#2}
+			\markboth{\MakeMarkcase{#2}}{}%
+		}
+	}
+}
+\ProvideDocumentCommand{\addchap}{ s o m }{%
+	\chapter*{#3}%
+	\markboth{}{}
+	\IfBooleanTF{#1}{
+	}{
+		\IfNoValueTF{#2}{
+			\addchaptertocentry{#3}
+			\markboth{\MakeMarkcase{#3}}{}%
+		}{%
+			\addchaptertocentry{#2}
+			\markboth{\MakeMarkcase{#2}}{}%
+		}
+	}
+}
+
+\ProvideDocumentCommand{\addsec}{ s o m }{%
+	\section*{#3}%
+	\markright{}
+	\IfBooleanTF{#1}{
+	}{
+		\IfNoValueTF{#2}{
+			\addsectiontocentry{#3}
+			\markright{\MakeMarkcase{#3}}%
+		}{%
+			\addsectiontocentry{#2}
+			\markright{\MakeMarkcase{#2}}%
+		}
+	}
+}
+
+\endinput

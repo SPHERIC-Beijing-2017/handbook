@@ -1,0 +1,42 @@
+\contourlength{2pt}
+\begin{tikzpicture}
+\node at (0,0){\includegraphics{../Dropbox/CASWorks/SPHERIC/figures/cover.jpg}};
+
+\begin{scope}[xshift=307]
+\node[font=\LARGE,right] at (-9,13){Peking University, China};
+\node[font=\bf\Huge] at (0,3.25){2017 SPHERIC Beijing International Workshop};
+\node[font=\bf\Huge] at (0,1){Handbook};
+\node[font=\LARGE]  at (0,-9){October 17-20, 2017};
+\end{scope}
+
+\draw[thin,gray](0.25,-15.1)--(0.25,15.1) (-0.25,-15.1)--(-0.25,15.1);
+
+
+\begin{scope}[xshift=-307]
+
+\node[font=\huge\bf] at (0,13){2017 SPHERIC Beijing International Workshop Handbook};
+
+
+\fill[white,opacity=0.3](-9.25,3.75) rectangle(9.25,11.5);
+\node[font=\LARGE\bf,right] at (-9,10.75){Sponsor organizations:};
+
+\node[font=\LARGE,right] at (-8,9.5){National Natural Science Foundation of China (NSFC)};
+\node[font=\LARGE,right] at (-8,8.5){Chinese Society of Theoretical and Applied Mechanics (CSTAM)};
+\node[font=\LARGE,right] at (-8,7.5){College of Engineering, Peking University};
+\node[font=\LARGE,right] at (-8,6.5){Institute of Ocean Research, Peking University};
+\node[font=\LARGE,right] at (-8,5.5){BIC-ESAT, Peking University};
+\node[font=\LARGE,right] at (-8,4.5){State Key Laboratory of Turbulence and Complex System, PKU};
+
+
+
+\fill[white,opacity=0.3](3.75,-14) rectangle(9.25,-8.5);
+
+\node at (6.5,-11.25){\includegraphics[scale=0.29]{../Dropbox/CASWorks/SPHERIC/figures/QR-pku.pdf}};
+\node[font=\bf\scriptsize] at (6.5,-13.75){Scan QR code to Visit the Official Website};
+
+\node[font=\large\bf,red!50!black] at (6.5,-11.25){\contour{white}{SPHERIC Beijing 2017}};
+\end{scope}
+
+
+%\node[rotate=-90] at (0,0){2017 SPHERIC Beijing International Workshop Conference Handbook};
+\end{tikzpicture}

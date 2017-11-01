@@ -1,0 +1,76 @@
+\contourlength{2pt}
+\begin{tikzpicture}
+\node at (0,0){\includegraphics{/home/zhou/Desktop/cover0.jpg}};
+
+\begin{scope}[xshift=307]
+\node[font=\LARGE,right] at (-9,12.5){\contour{white}{Peking University, Beijing, China, 2017}};
+\node[font=\bf\Huge,left=8em] at (0,5){\contour{white}{Advances of}};
+\node[font=\bf\Huge] at (0,3.25){\contour{white}{Smoothed Particle Hydrodynamics:}};
+\node[font=\bf\Large] at (0,1.75){\contour{white}{the Proceedings of the 2017 SPHERIC Beijing International Workshop}};
+
+%\node[font=\bf\huge] at (0,-4.75){\contour{white}{Edited by Moubin Liu and Can Huang}};
+
+\node[font=\bf\LARGE,right] at (-6.8,-1){\contour{white}{Editors}};
+\node[font=\bf\LARGE,right] at (-6.8,-2.25){\contour{white}{Moubin Liu}};
+
+ \node[font=\bf\LARGE,right] at (-6.8,-3.25){\contour{white}{Can Huang}};
+
+
+\node[font=\bf\LARGE]  at (0,-12.75){\contour{white}{ScienTech Publisher}};
+\end{scope}
+
+%\draw[thin,gray](0.25,-15.1)--(0.25,15.1) (-0.25,-15.1)--(-0.25,15.1);
+
+
+\node[font=\Large\bf,rotate=-90] at (0,0){Advances of Smoothed Particle Hydrodynamics: the Proceedings of the 2017 SPHERIC Beijing International Workshop};
+
+\begin{scope}[xshift=-307]
+
+\node[font=\huge\bf,right] at (-8.5,12.5){Advances of Smoothed Particle Hydrodynamics:};
+\node[font=\Large\bf,right] at (-8.5,11.5){ the Proceedings of the 2017 SPHERIC Beijing International Workshop};
+
+
+\begin{scope}[yshift=-3em]
+\fill[white,opacity=0.5](-8.5,2.5) rectangle(8.5,11.5);
+\node[font=\Large\bf,right] at (-8.25,10.75){Introduction:};
+
+\node[font=\Large,below right,text width=46.5em,text justified] at (-8.25,9.75){
+Smoothed particle hydrodynamics (SPH) is a most popular mesh-free particle method in the broad area of computational engineering sciences. The SPHERIC workshops are the only worldwide events which exclusively focus on the SPH methodology and related simulation approaches. \textbf{The 2017 SPHERIC Beijing International Workshop} (or SPHERIC Beijing 2017) is the first time that the SPHERIC Workshop is held in Asia.
+\newline
+
+This proceedings contains 43 papers presented at the SPHERIC Beijing 2017, and shows the latest development of SPH, ranging from computational modelling using SPH, theoretical and numerical aspects of SPH, numerics, alternative formulation and particle-based simulation techniques, and diversified applications.};
+
+\end{scope}
+
+
+\begin{scope}[yshift=-35em]
+\fill[white,opacity=0.5](-8.5,5) rectangle(8.5,11.5);
+\node[font=\Large\bf,right] at (-8.25,10.75){Sponsor organizations:};
+
+\node[font=\Large,right] at (-7.5,9.5){National Natural Science Foundation of China (NSFC)};
+\node[font=\Large,right] at (-7.5,8.75){Chinese Society of Theoretical and Applied Mechanics (CSTAM)};
+\node[font=\Large,right] at (-7.5,8){College of Engineering, Peking University};
+\node[font=\Large,right] at (-7.5,7.25){Institute of Ocean Research, Peking University};
+\node[font=\Large,right] at (-7.5,6.5){BIC-ESAT, Peking University};
+\node[font=\Large,right] at (-7.5,5.75){State Key Laboratory of Turbulence and Complex System, PKU};
+\end{scope}
+
+
+\begin{scope}[yshift=1.5em]
+\fill[white](4.5,-13.5) rectangle(8.5,-9.5);
+
+\fill[white](-12em,-13.5) rectangle(12em,-9.5);
+
+\node at (0,-11.1){\includegraphics[width=22em,height=7.75em]{/home/zhou/Desktop/BAR-ID.pdf}};
+\node[font=\bf\Large,above=0.5em] at (0,-13.5){978-1-946018-02-1};
+
+\node at (6.5,-11.5){\includegraphics[scale=0.17]{/home/zhou/Desktop/QR-ID.pdf}};
+
+
+\node[font=\bf,red!50!black] at (6.5,-11.5){\contour{white}{SPHERIC Beijing 2017}};
+\end{scope}
+\end{scope}
+
+
+%\node[rotate=-90] at (0,0){2017 SPHERIC Beijing International Workshop Conference Handbook};
+\end{tikzpicture}

@@ -1,0 +1,10 @@
+\usetikzlibrary{arrows}
+
+\begin{tikzpicture}[scale=1]
+\node at (0,0){\includegraphics{/home/zhou/Dropbox/Apps/ShareLaTeX/SPHeric/figures/subway.pdf}};
+
+\node[shape=circle,inner sep=2] (PKU) at (-6.3,3.95){};
+
+
+\draw[<-,>=stealth',thick,red] (PKU) to[out=-140,in=0]++(-3.75,-1) node[left,font=\bf\small]{East Gate of PKU};
+\end{tikzpicture}

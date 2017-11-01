@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+
+\node at (0,0){\includegraphics[scale=0.23]{../Dropbox/CASWorks/SPHERIC/figures/coverA-print.jpg}};
+
+\node[font=\LARGE,right] at (-9,13){Peking University, China};
+
+\node[font=\bf\Huge] at (0,3.25){2017 SPHERIC Beijing International Workshop};
+\node[font=\bf\Huge] at (0,1){Handbook};
+
+\node[font=\LARGE]  at (0,-9){October 17-20, 2017};
+
+
+
+%\node[rotate=-90] at (0,0){2017 SPHERIC Beijing International Workshop Conference Handbook};
+\end{tikzpicture}

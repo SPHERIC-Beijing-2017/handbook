@@ -1,0 +1,92 @@
+\documentclass[11pt,a4paper,titlepage,oneside]{book}
+\usepackage{pdflscape}
+%\usepackage[textwidth=450pt]{geometry}
+\usepackage[left=0.8in,right=0.8in,top=1in,bottom=0.7in]{geometry}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{eqlist}
+\usepackage{array}
+\usepackage{thmbox}
+\usepackage{multirow}
+\usepackage{comment}
+\setlength{\parskip}{8pt plus 2pt minus 2pt}
+\setlength{\parindent}{0pt}
+\usepackage{fancyhdr}
+\usepackage{pdfpages}
+\usepackage{minitoc}
+\usepackage{timetable}
+\usepackage{longtable}
+\usepackage{xeCJK}
+\usepackage{comment}
+\usepackage{titletoc}
+\usepackage{titlesec}
+\usepackage{unnumberedtotoc}
+\usepackage{ltablex,makecell}
+\usepackage[Glenn]{fncychap}
+\usepackage{hyperref}
+\setCJKmainfont[BoldFont=SimHei]{SimSun}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+%\usepackage{tabularx,makecell}
+
+
+\makeatletter
+\def\hlinewd#1{%
+\noalign{\ifnum0=`}\fi\hrule \@height #1 %
+\futurelet\reserved@a\@xhline}
+\makeatother
+
+% %Options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
+
+\graphicspath{{figures/}}
+
+\pagestyle{fancy}
+\fancyhead{} 
+\lhead{SPHERIC Beijing 2017}
+\chead{}
+\rhead{Beijing, China, October 17-20, 2017} 
+
+
+\makeatletter
+\renewcommand*{\cleardoublepage}{\clearpage\if@twoside \ifodd\c@page\else
+\hbox{}%
+\thispagestyle{empty}%
+\newpage%
+\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+\newcommand\MBLiu{\href{http://www.coe.pku.edu.cn/dept/f/Liu-Moubin}{Moubin Liu}}
+
+\begin{document}
+%\title{2017 SPHERIC Beijing International Workshop\\Conference Handbook}
+%\author{Peking University}
+%\date{October, 17-20, 2017}
+%\maketitle
+
+\includepdf{figures/coverA-web.pdf}
+
+\pagenumbering{roman}
+
+\input{sections/WelcomeMessage}
+
+\input{sections/Acknowledgement}
+
+
+\setcounter{tocdepth}{1}
+\renewcommand\contentsname{CONTENTS}
+\dominitoc\tableofcontents
+
+ 
+\newpage
+\pagenumbering{arabic}
+
+\input{sections/AboutSPHeric}
+\input{sections/AboutPKU}
+\input{sections/Details}
+
+%\input{sections/Committee}
+\input{sections/Program}
+%\input{sections/Abstracts}
+\input{sections/participants}
+\end{document}

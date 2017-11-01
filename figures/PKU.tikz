@@ -1,0 +1,28 @@
+\begin{tikzpicture}[scale=0.6]
+
+\begin{scope}
+\clip(-25.8,-18.1) rectangle(25.8,18);
+\node at (0,0){\includegraphics[scale=0.3]{/home/zhou/Desktop/SPHERIC/figures/PKUmap.jpg}};
+\end{scope}
+
+\node[white,shape=circle,fill=red,font=\large\bf,inner sep=1pt,draw=black] at (10,-5.8){A}; 
+
+\node[white,shape=circle,fill=blue,font=\large\bf,inner sep=1pt,draw=black] at (8.8,-6.25){B}; 
+\node[white,shape=circle,fill=purple,font=\large\bf,inner sep=1pt,draw=black] at (16.5,-7.5){C}; 
+
+\node[shape=circle,fill=green,font=\large\bf,inner sep=1pt,draw=black] at (16.5,-9){D}; 
+
+\node[shape=circle,fill=green,font=\large\bf,inner sep=1pt,draw=black] at (23,-7.5){E}; 
+
+
+\draw[thick](-25.8,-18.1) rectangle(25.8,18);
+
+
+\filldraw[fill=white,draw=black](-25,-17.1)--(-7.4,-17.1)--(-7.4,-6.75)--(-13,-6.75)--(-13,-4.1)--(-19,-4.1)--(-19,-0.75)--(-25,-0.75)--cycle;
+
+\node[right,font=\large] at (-24,-7.75){A. Yingjie Exchange Center (Workshop Venue)};
+\node[right,font=\large] at (-24,-9.75){B. \#1 Science Building  (SPH Training Venue)};
+\node[right,font=\large] at (-24,-11.75){C. Blk 2 (Yi Yuan, For buffet lunch)};
+\node[right,font=\large] at (-24,-13.75){D. Blk 1 (For Accommodation)};
+\node[right,font=\large] at (-24,-15.75){E. Blk 9 (For Accommodation)};
+\end{tikzpicture}

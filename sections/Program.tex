@@ -1,0 +1,400 @@
+\newgeometry{left=0.8in,right=0.8in,top=0in,bottom=0.7in}
+
+\chapter*{Program}\chead{Program}
+%\addstarredchapter{Workshop Program}
+%\chaptermark{Workshop Program}
+\addcontentsline{toc}{chapter}{Program} \mtcaddchapter
+\vspace{-5em}
+
+%\newpage
+\phantomsection
+\addsec{Program Overview}\rhead{Program Overview}
+%\section*{Program Overview}
+%\addcontentsline{toc}{section}{Program Overview}\mtcaddchapter
+\setslotsize{3.375cm}{0.3cm}
+\setslotcount{4}{66}
+\setbottomspace{0pt}
+\settextframe{3pt}
+
+% Define event types
+\defineevent{keynote}{0.0} {0.28}{1.0} {1.0}{1.0}{1.0}
+\defineevent{session}{0.0} {0.6}{1.0} {1.0}{1.0}{1.0}
+\defineevent{dining}    {1.0} {0.4} {0.2} {1.0}{1.0}{1.0}
+\defineevent{coffee}    {1.0} {0.4} {0.8} {1.0}{1.0}{1.0}
+\defineevent{registration} {1.0} {0.4} {0.2} {1.0}{1.0}{1.0}
+\defineevent{training}   {0.21}{0.5} {0.16}{1.0}{1.0}{1.0} 
+\defineevent{opening}      {0.8} {0.2} {0.2} {1.0}{1.0}{1.0}
+
+% Start the time table
+%\noindent\printheading{PROGRAM OVERVIEW}
+%\vspace{-0.5em}
+\begin{timetable}
+  \hours{8}{10}{1}
+  \englishdays{2}
+  \event 1 {0900} {1030} {Training Session 1}                  {9:00}        {10:30}     {training}
+  \event 1 {1030} {1050} {\vspace{0.1em}Coffee: {\scriptsize 10:30--10:50}}        {}     {} {coffee}
+  \event 1 {1050} {1220} {Training Session 2}               {10:50}         {12:20}   {training}
+  \event 1 {1220} {1315} {Lunch}                  {12:20}        {13:15}     {dining}
+  \event 1 {1315} {1345} {Training Session 3}                       {13:15}         {13:45}   {training}
+  \event 1 {1345} {1415} {Training Session 4}                  {13:45}        {14:15}     {training}
+  \event 1 {1415} {1530} {Training Session 5I}                       {14:15}         {15:30}   {training}
+  \event 1 {1530} {1550} {\vspace{0.1em}Coffee: {\scriptsize 15:30--15:45}}        {}     {} {coffee}
+  \event 1 {1550} {1730} {Training Session 5II}                       {15:45}         {17:30}   {training}
+  \event 1 {1730} {1830} {Dinner}                  {17:30}        {}     {dining}
+  
+  \event 2 {0800} {0845} {Registration}               {8:00}      {8:45}     {registration}
+  \event 2 {0845} {0915} {Opening}        {8:45}     {9:15} {opening}
+  \event 2 {0915} {1010} {Keynote 1}                    {9:15}         {10:10} {keynote}
+  \event 2 {1010} {1100} {Session 1}               {10:10}      {11:00}     {session}
+  \event 2 {1100} {1120} {\vspace{0.1em}Coffee: {\scriptsize 11:00--11:20}}        {}     {} {coffee}
+  \event 2 {1120} {1225} {Session 2}               {11:20}      {12:25}     {session}
+  \event 2 {1225} {1400} {Lunch}                  {12:25}        {14:00}     {dining}
+  \event 2 {1400} {1505} {Session 3}               {14:00}      {15:05}     {session}
+  \event 2 {1505} {1610} {Session 4}               {15:05}      {16:10}     {session}
+  \event 2 {1610} {1630} {\vspace{0.1em}Coffee: {\scriptsize 16:10--16:30}}        {}     {} {coffee}
+  \event 2 {1630} {1735} {Session 5}               {16:30}      {17:35}     {session}
+  \event 2 {1735} {1830} {Dinner}                  {17:35}        {}     {dining}
+  
+  \event 3 {0900} {0955} {Keynote 2}                    {9:00}         {9:55} {keynote}
+  \event 3 {0955} {1100} {Session 6}               {9:55}      {11:00}     {session}
+  \event 3 {1100} {1120} {\vspace{0.1em}Coffee: {\scriptsize 11:00--11:20}}        {}     {} {coffee}
+  \event 3 {1120} {1210} {Session 7}               {11:20}      {12:10}     {session}
+  \event 3 {1210} {1400} {Lunch}                  {12:10}        {14:00}     {dining}
+  \event 3 {1400} {1505} {Session 8}               {14:00}      {15:05}     {session}
+  \event 3 {1505} {1525} {\vspace{0.1em}Coffee: {\scriptsize 15:05--15:25}}        {}     {} {coffee}
+  \event 3 {1525} {1630} {Session 9}               {15:25}      {16:30}     {session}
+  \event 3 {1630} {1700} {Take Bus To Yu Xian Du}                  {}        {\hspace{-2em}16:30--17:00}     {dining}
+  \event 3 {1700} {1800} {Visit YXD Food Museum}                  {17:00}        {18:00}     {dining}
+  \event 3 {1800} {1900} {Banquet \& Award}                  {18:00}        {21:00}     {opening}
+  
+  \event 4 {0900} {1005} {Session 10}               {9:00}      {10:05}     {session}
+  \event 4 {1005} {1110} {Session 11}               {10:05}      {11:10}     {session}
+  \event 4 {1110} {1130} {\vspace{0.1em}Coffee: {\scriptsize 11:10--11:30}}        {}     {} {coffee}
+  \event 4 {1130} {1235} {Session 12}               {11:30}      {12:35}     {session}
+  
+  \event 4 {1235} {1400} {Lunch}                  {12:35}        {14:00}     {dining}
+  \event 4 {1400} {1505} {Session 13}               {14:00}      {15:05}     {session}
+  \event 4 {1505} {1610} {Session 14}               {15:05}      {16:10}     {session}
+  \event 4 {1610} {1630} {\vspace{0.1em}Coffee: {\scriptsize 16:10--16:30}}        {}     {} {coffee}
+  \event 4 {1630} {1720} {Session 15}               {16:30}      {17:20}     {session}
+  \event 4 {1720} {1830} {Dinner}                  {17:20}        {}     {dining}
+\end{timetable}
+
+\newgeometry{left=0.8in,right=0.8in,top=1in,bottom=0.7in}
+
+
+\newpage
+%\begin{landscape}
+\renewcommand{\arraystretch}{2}
+\phantomsection
+\addsec{SPH Training Day Program}\rhead{SPH Training Day Program}
+%\section*{SPH Training Day Program}
+%\addcontentsline{toc}{section}{SPH Training Day Program}\mtcaddchapter
+
+\subsection*{Venue: Room 1338W, Level 3, \#1 Science Blk, Peking University}
+\subsection*{地点：北京大学理科一号楼三层1338W房间（计算机中心8号机房）}
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{N}[1]{>{\arraybackslash}m{#1}}
+\begin{tabularx}{\textwidth}{l|X|N{11em}}
+%\begin{tabular}{|c|c|c|}
+\hlinewd{1.5pt}
+\textbf{Training day} & \textbf{17 October (Tuesday)} & \tabularnewline
+\hlinewd{1pt}  
+\hphantom{0}9:00-10:30 & Training Session 1: Theory and Application of SPH - Part 1: An Introduction
+to Multi-Phase Modelling in SPH & Dr. Xiangyu Hu\tabularnewline
+\hline 
+10:30-10:50 & Coffee & \tabularnewline
+\hline 
+10:50-12:20 & Training Session 2: Advanced SPH/CG(Coarse-Grained) modelling for
+biomechanics and biomedical systems  & Prof. Y. T. Gu\tabularnewline
+\hline 
+12:20-13:15 & Lunch & Box lunch\tabularnewline
+\hline 
+13:15-13:45 & Training Session 3: Simulation with DualSPHysics & Dr. Ben Rogers\tabularnewline
+\hline 
+13:45-14:15 & Training Session 4: Pre- and Post-Processing (Visualisation) with
+DualSPHysics & Dr Jose Dominguez\tabularnewline
+\hline 
+14:15-15:30 & Training Session 5: Practical hands-on session with DualSPHysics I & \multirow{3}{*}{\shortstack[l]{Dr. Ben Rogers,\\ \\ \\ Dr. Jose Dominguez,\\ \\ \\ Dr. Jose González-Cao,\\ \\ \\ Mr. Feng Zhang}}\tabularnewline
+\cline{1-2} 
+15:30-15:45 & Coffee & \tabularnewline
+\cline{1-2} 
+15:45-17:30 & Training Session 5: Practical hands-on session with DualSPHysics II & \tabularnewline
+\hline 
+17:30\hphantom{-16:30} & Dinner & @PKU canteen with card\tabularnewline
+\hlinewd{1.5pt}
+\end{tabularx}
+
+\vspace{2em}
+\begin{itemize}
+\item Full day registration (8:30AM to 18:00PM) at Room 104 in the Peking University Overseas Exchange Center\\
+10月17日全天上午8:30 到 下午18:00亦在北京大学英杰交流中心104室注册
+\end{itemize}
+%\end{tabular}
+
+%\end{landscape}
+
+
+\newpage
+\phantomsection
+\addsec{SPHERIC Beijing 2017 Workshop Program}\rhead{Workshop Program}
+%\section*{SPHERIC Beijing 2017 Workshop Program}
+%\addcontentsline{toc}{section}{SPHERIC Beijing 2017 Workshop Program}\mtcaddchapter
+\subsection*{Venue: Conference Room \#2, Peking University Overseas Exchange Centre}
+\subsection*{地点：北京大学英杰交流中心第二会议室}
+
+
+%\begin{tabular}{|c|l|l|l|}
+\begin{tabularx}{\textwidth}{l|X|N{21em}|N{9em}}
+\hlinewd{1.5pt}
+\textbf{1st DAY} & \multicolumn{3}{l}{\textbf{18 October (Wednesday)}}\tabularnewline
+\hlinewd{1pt}
+08:00-08:45 & \multicolumn{3}{l}{Registration}\tabularnewline
+\hline 
+\multirow{2}{*}{08:45-09:15} & \multirow{2}{*}{Opening} & Speech by: B. Rogers & \multirow{2}{*}{Chair: M. B. Liu}\tabularnewline
+ &  & Speech by: J. X. Wang, Vice Dean of CoE, PKU & \tabularnewline
+\hline 
+09:15-10:10 & \multicolumn{2}{p{\dimexpr0.475\linewidth+10\tabcolsep}|}{\hyperref[David]{Keynote 1: Smoothed particle hydrodynamics, fact checking: from theory to applications by Prof. David Le Touzé, Ecole Centrale de Nantes}} & Chair: J. X. Wang\tabularnewline
+\hline 
+\multirow{2}{*}{10:10-11:00} & \multicolumn{2}{l|}{\hyperref[1.1]{Session 1: Maritime and Naval Architecture Applications}} & Chair: A. Colagrossi \tabularnewline
+\cline{2-4} 
+ & \multicolumn{3}{p{\dimexpr0.825\linewidth+0\tabcolsep}}{
+\vspace{-1.5em}
+\begin{itemize}
+\item[1.1] \hyperref[1.1]{``DualSPHysics: a numerical tool to simulate real breakwaters'' \underline{F. Zhang}$^\text{Student Prize}$, S. P. Shang, Alejandro Crespo, José Dominguez, Moncho Gomez-Gesteira, Corrado Altomare, Andrea Marzeddu}
+\item[1.2] \hyperref[1.2]{``High speed water impacts of fat plates in different ditching configurations through a Riemann-ALE SPH model'' \underline{S. Marrone}, A. Colagrossi, M. De Leffe, L. Chiron, D. Le Touze}
+%\item[1.2] \hyperref[1.2]{``Numerical simulation of green water using SPH method'' \underline{L. J. Wen}, Q. D. Feng}
+\item[1.3] \hyperref[1.3]{``Application of improved SPH solid-wall boundary model in missile water exiting'' \underline{H. L. Zheng}, H. F. Qiang, F. Z. Chen, C. Shi}
+\end{itemize}
+}\tabularnewline
+\hline 
+ 11:00-11:20 & \multicolumn{3}{l}{Coffee} \tabularnewline
+\hline 
+\multirow{2}{*}{11:00-12:25} & \multicolumn{2}{l|}{\hyperref[2.1]{Session 2: Multiple Continua and Multi-Phase Flows}} & Chair: X. Y. Hu \tabularnewline
+\cline{2-4} 
+ & \multicolumn{3}{p{\dimexpr0.825\linewidth+0\tabcolsep}}{
+\vspace{-1.5em}
+\begin{itemize}
+\item[2.1] \hyperref[2.1]{``Multiphase Godunov-typed smoothed particle hydrodynamics method with approximate Riemann solvers'' \underline{Z. W. Cai}, Z. Zong, L. Zhou, Z. Chen, C. Tiao}
+\item[2.2] \hyperref[2.2]{``A two-phase SPH model for sediment laden flows'' \underline{H. B. Shi}, X. P. Yu}
+\item[2.3] \hyperref[2.3]{``Numerical simulation of water-entry problems using an improved multiphase SPH method'' \underline{H. Cheng}$^\text{Student Prize}$, A. M. Zhang, F. R. Ming}
+\item[2.4] \hyperref[2.4]{``Stable sharp interface method for SPH'' \underline{M. Y. Zhang}}
+\end{itemize}
+}\tabularnewline
+\hline 
+12:25-14:00 & \multicolumn{3}{l}{Lunch (Buffet lunch @ ZhongGuanYuan Global Village PKU)} \tabularnewline
+\hline 
+\multirow{2}{*}{14:00-15:05} & \multicolumn{2}{l|}{\hyperref[3.1]{Session 3: Impacts with Fluids or Solids}} & Chair: X. H. Guo \tabularnewline
+\cline{2-4} 
+ & \multicolumn{3}{p{\dimexpr0.825\linewidth+0\tabcolsep}}{
+\vspace{-1.5em}
+\begin{itemize}
+\item[3.1] \hyperref[3.1]{``Aircraft tire water spray simulation using SPH'' \underline{Y. K. Hu}, Y. F. Rong, D. X. Leng, F. Xu, X. Y. Gao, R. G. Cao, W. Ding, J. Lv}
+\item[3.2] \hyperref[3.2]{``Numerical simulation of the damage of multi-floor buildings by conical projectile with SPH method'' H. F. Qiang, \underline{X. Y. Sun}, F. Z. Chen, G. X. Zhang }
+\item[3.3] \hyperref[3.3]{``Corrected smoothed particle hydrodynamics for simulating failure progress of model-scale ice'' \underline{X. Zheng}, N. B. Zhang, Q. W. Ma}
+\item[3.4] \hyperref[3.4]{``Numerical study of the mechanism of explosive/impact welding using an improved SPH method'' \underline{Z. L. Zhang}$^\text{Student Prize}$, M. B. Liu}
+\end{itemize}
+}\tabularnewline
+\hline 
+\multirow{2}{*}{15:05-16:10} & \multicolumn{2}{l|}{\hyperref[4.1]{Session 4: Free Surface and Moving Boundaries Applications}} & Chair: X. F. Yang \tabularnewline
+\cline{2-4} 
+ & \multicolumn{3}{p{\dimexpr0.825\linewidth+0\tabcolsep}}{
+\vspace{-1.5em}
+\begin{itemize}
+\item[4.1] \hyperref[4.1]{``SPH numerical investigation of oscillating characteristics of hydraulic jumps at an abrupt drop'' Diana De Padova, Michele Mossa, \underline{Stefano Sibilla}}
+\item[4.2] \hyperref[4.2]{``An SPH simulation of bubble cavity evolution on underwater movement'' \underline{J. R. Shao}, M. B. Liu}
+\item[4.3] \hyperref[4.3]{``The $\delta$ALE-SPH model: an improved $\delta$-SPH scheme containing particle shifting and ALE formulation'' \underline{P. N. Sun}$^\text{Student Prize}$, A. M. Zhang, A. Colagrossi, S. Marrone, M. Antuono}
+\item[4.4] \hyperref[4.4]{``SPH numerical simulation of lift-off by impact of sand particles on flat sand bed'' \underline{J. Zhao}, A. F. Jin, Maimtimin Geni, X. J. Ma}
+\end{itemize}
+}\tabularnewline
+\hline 
+ 16:10-16:30 & \multicolumn{3}{l}{Coffee} \tabularnewline
+\hline 
+\multirow{2}{*}{16:30-17:35} & \multicolumn{2}{l|}{\hyperref[5.1]{Session 5: Geotechnical  Applications}} & Chair: J. S. Wu \tabularnewline
+\cline{2-4} 
+ & \multicolumn{3}{p{\dimexpr0.825\linewidth+0\tabcolsep}}{
+\vspace{-1.5em}
+\begin{itemize}
+\item[5.1] \hyperref[5.1]{``A comparative study of SPH and MPM in modeling mixed-mode failure in rocks'' \underline{Sam Raymond}$^\text{Student Prize}$, Bruce Jones, John Williams}
+\item[5.2] \hyperref[5.2]{``A SPH investigation of soil plastic behaviour with Mohr-Coulomb constitutive model'' \underline{S. H. Zhao}, Ha H. Bui, Vincent Lemiale, Giang D. Nguyen}
+\item[5.3] \hyperref[5.3]{``A robust approach to model rock fracture with SPH'' \underline{Y. N. Wang}, Ha H. Bui, Giang D. Nguyen, P. G. Ranjith} 
+\item[5.4] \hyperref[5.4]{``An elasto-plastic-$\mu$(I) SPH model for landslide induced debris flow'' \underline{W. T. Zhang}, Y. An, Q. Q. Liu}
+\end{itemize}
+}\tabularnewline
+\hline 
+17:35\hphantom{-16:30} & \multicolumn{3}{l}{\textbf{Dinner} @PKU canteen with card} \tabularnewline
+\hlinewd{1.5pt}
+\end{tabularx}
+%\end{tabular}
+
+
+
+\newpage
+
+
+
+
+%\begin{tabular}{|c|l|l|l|}
+\begin{tabularx}{\textwidth}{l|X|N{21em}|N{9em}}
+\hlinewd{1.5pt}
+\textbf{2nd DAY} & \multicolumn{3}{l}{\textbf{19 October (Thursday)}}\tabularnewline
+\hlinewd{1pt}
+09:00-09:55 & \multicolumn{2}{p{\dimexpr0.475\linewidth+10\tabcolsep}|}{\hyperref[Chen]{Keynote 2: An implicit gradient reproducing kernel particle method: theory and applications by Prof. J. S. Chen, University of California}} & Chair: P. Chen, Head, Division of Computational Mechanics , PKU\vspace{-2em}\tabularnewline
+\hline 
+\multirow{2}{*}{09:55-11:00} & \multicolumn{2}{l|}{\hyperref[6.1]{Session 6: Hydraulic Applications I}} & Chair: S. Marrone \tabularnewline
+\cline{2-4} 
+ & \multicolumn{3}{p{\dimexpr0.825\linewidth+0\tabcolsep}}{
+\vspace{-1.5em}
+\begin{itemize}
+\item[6.1]\hyperref[6.1]{``Overview of SPH-ALE applications for hydraulic turbines in ANDRITZ Hydro'' Jean-Christophe Marongiu, Magdalena Neuhauser, \underline{Martin Rentschler}, Etienne Parkinson} 
+\item[6.2]\hyperref[6.2]{``Numerical and experimental investigation of two porous wave - breaking structures'' W. Q. Hu, \underline{Q. Fan}$^\text{Student Prize}$, J. M. Zhan, W. H. Cai} 
+\item[6.3]\hyperref[6.3]{``SPH for the interaction between tsunami wave and upright cylindrical groups'' \underline{J. J. Li}$^\text{Student Prize}$, L. Tian, Y. S. Yang, L. C. Qiu, Y. Han}
+\item[6.4]\hyperref[6.4]{``Hydrodynamics characteristics of land hinged oscillating wave surge converter with SPH method''
+D. H. Zhang, \underline{Y. X. Shi}, C. Huang, Y. L. Si, B. Huang, and W. Li }
+\end{itemize}
+}\tabularnewline
+\hline 
+ 11:00-11:20 & \multicolumn{3}{l}{Coffee} \tabularnewline
+\hline 
+\multirow{2}{*}{11:20-12:10} & \multicolumn{2}{l|}{\hyperref[7.1]{Session 7: Adaptivity (variable resolution)}} & Chair: L. C. Qiu \tabularnewline
+\cline{2-4} 
+ & \multicolumn{3}{p{\dimexpr0.825\linewidth+0\tabcolsep}}{
+\vspace{-1.5em}
+\begin{itemize}
+\item[7.1]\hyperref[7.1]{``The study on SPH method with space variable smoothing length and its applications to multi-phase flow'' \underline{W. K. Shi}$^\text{Student Prize}$, Y. M. Shen , J. Q. Chen}
+\item[7.2]\hyperref[7.2]{``A dynamic refinement strategy in SPH for simulating the water entry of an elastomer'' \underline{L. Wang}, F. Xu, Y. Yang}
+\item[7.3]\hyperref[7.3]{``Adaptive particle splitting in the finite volume particle method'' \underline{Nathan J. Quinlan}}
+\end{itemize}
+}\tabularnewline
+\hline 
+12:10-14:00 & \multicolumn{3}{l}{Lunch @PKU canteen with card} \tabularnewline
+\hline 
+\multirow{2}{*}{14:00-15:05} & \multicolumn{2}{l|}{\hyperref[8.1]{Session 8: New applications of SPH}} & Chair: David Le Touzé \tabularnewline
+\cline{2-4} 
+ & \multicolumn{3}{p{\dimexpr0.825\linewidth+0\tabcolsep}}{
+\vspace{-1.5em}
+\begin{itemize}
+\item[8.1]\hyperref[8.1]{`` Modeling the melting process of quartz glass using SPH method'' \underline{Z. Y. Liu}$^\text{Student Prize}$, Q. L. Ma, H. S. Fang} 
+\item[8.2]\hyperref[8.2]{``Study on dynamic behaviors of liquid-filled flexible multibody systems under the low-gravity environment'' \underline{W. Z. Kong}, Q. Tian}
+\item[8.3]\hyperref[8.3]{``A SPH model for the root system of plants'' \underline{Matthias Mimault}, Lionel Dupuy, Mariya Ptashnyk}
+\item[8.4]\hyperref[8.4]{``SPH simulation of drop impact on a hot wall with vaporization effects'' \underline{X. F. Yang}, S. C. Kong, M. B. Liu}
+\end{itemize}
+}\tabularnewline
+\hline 
+ 15:05-15:25 & \multicolumn{3}{l}{Coffee} \tabularnewline
+\hline 
+\multirow{2}{*}{15:25-16:30} & \multicolumn{2}{l|}{\hyperref[9.1]{Session 9: High-Performance Computing}} & Chair: B. Rogers \tabularnewline
+\cline{2-4} 
+ & \multicolumn{3}{p{\dimexpr0.825\linewidth+0\tabcolsep}}{
+\vspace{-1.5em}
+\begin{itemize}
+\item[9.1] \hyperref[9.1]{``Developing an extensible, portable, scalable toolkit for massively parallel incompressible smoothed particle hydrodynamics (ISPH)'' \underline{X. H. Guo}, Benedict D. Rogers, Steven Lind, Peter K. Stansby}
+\item[9.2] \hyperref[9.2]{``Three-dimensional sloshing simulations by using GPU-based MPS method'' \underline{X. Chen}, X. Wen, D. C. Wan}
+\item[9.3] \hyperref[9.3]{``GPU-based SPH modeling of flood with floating bodies in urban layouts including underground spaces'' \underline{J. S. Wu}, N. Li, W. Y. Liu, H. Zhang}
+\item[9.4] ``Improve the effectively of computational fluid dynamics work based on supercomputing cloud'' \underline{N. Qiao} % no abstract
+\end{itemize}
+}\tabularnewline
+\hline 
+16:30-17:00 & \multicolumn{3}{l}{Take Bus To Yu Xian Du (YXD)} \tabularnewline
+\hline 
+17:00-18:00 & \multicolumn{3}{l}{Visit the YXD Food Museum} \tabularnewline
+\hline 
+18:00-21:00 & \multicolumn{3}{l}{Conference Banquet \& Award} \tabularnewline
+\hlinewd{1.5pt} 
+\end{tabularx}
+%\end{tabular}
+
+
+
+\newpage
+
+
+
+
+%\begin{tabular}{|c|l|l|l|}
+\begin{tabularx}{\textwidth}{l|X|N{21em}|N{9em}}
+\hlinewd{1.5pt}
+\textbf{3rd DAY} & \multicolumn{3}{l}{\textbf{20 October (Friday)}}\tabularnewline
+\hlinewd{1pt}
+\multirow{2}{*}{09:00-10:05} & \multicolumn{2}{l|}{\hyperref[10.1]{Session 10: Numerical Aspects of SPH}} & Chair: N. Quinlan \tabularnewline
+\cline{2-4} 
+ & \multicolumn{3}{p{\dimexpr0.825\linewidth+0\tabcolsep}}{
+\vspace{-1.5em}
+\begin{itemize}
+\item[10.1]\hyperref[10.1]{``SPH energy balance during the generation and propagation of gravity waves'' \underline{Domenico Davide Meringolo}, Y. Liu, A. Colagrossi}
+\item[10.2]\hyperref[10.2]{``Water hammer analysis using SPH in density summation form'' \underline{D. Q. Hou}, C. Y. Huang, M. L. Wang, H. F. Duan}
+\item[10.3]\hyperref[10.3]{``Particle trajectory calculation in SPH'' \underline{J. Y. Shen}, W. H. Lu, D. Q. Hou, Arris S. Tijsseling}
+\item[10.4]\hyperref[10.4]{``Simulating shock waves with corrective smoothed particle method (CSPM)'' \underline{C. Y. Huang}, J. Deng, D. Q. Hou, Arris S. Tijsseling}
+\end{itemize}
+}\tabularnewline
+\hline 
+\multirow{2}{*}{10:05-11:10} & \multicolumn{2}{l|}{\hyperref[11.1]{Session 11: Fluid Structure Interaction}} & Chair: M. De Leffe \tabularnewline
+\cline{2-4} 
+ & \multicolumn{3}{p{\dimexpr0.825\linewidth+0\tabcolsep}}{
+\vspace{-1.5em}
+\begin{itemize}
+\item[11.1]\hyperref[11.1]{``SPH modeling of fluid-structure interaction (FSI)''  L. H. Han, \underline{X. Y. Hu}}
+\item[11.2]\hyperref[11.2]{``Numerical modeling of 2D complex movement patterns to FSI problems using smoothed particle hydrodynamics'' \underline{C. Zhuang}, D. A. Hu, T. Long, G. Yang}
+\item[11.3]\hyperref[11.3]{``Implement of the MPS-FEM coupled method for the FSI simulation of the 3-D dam-break problem'' \underline{Y. L. Zhang}, D. C. Wan}
+\item[11.4]\hyperref[11.4]{``A new numerical method for SPH fluid-solid coupling simulation and its preliminary verification'' \underline{X. J. Ma}, Geni Mamtimin, A. F. Jin}
+\end{itemize}
+}\tabularnewline
+\hline 
+11:10-11:30 & \multicolumn{3}{l}{Coffee} \tabularnewline
+\hline 
+\multirow{2}{*}{11:30-12:35} & \multicolumn{2}{l|}{\hyperref[12.1]{Session 12: Modelling of Incompressible Flows}} & Chair: A. M. Zhang \tabularnewline
+\cline{2-4} 
+ & \multicolumn{3}{p{\dimexpr0.825\linewidth+0\tabcolsep}}{
+\vspace{-1.5em}
+\begin{itemize}
+\item[12.1]\hyperref[12.1]{``An enhanced ISPH-SPH coupled method for incompressible fluid-elastic structure interactions'' Abbas Khayyer, Hitoshi Gotoh, \underline{Yuma Shimizu}, Hosein Falahaty}
+\item[12.2]\hyperref[12.2]{``Interaction between solitary wave and flexible plate based on MPS-FEM coupled method'' \underline{C. P. Rao}, D. C. Wan}
+\item[12.3]\hyperref[12.3]{``Modeling of single film bubble and numerical study of the plateau structure in foam system'' \underline{Z. G. Sun}, N. Ni, Y. J. Sun, G. Xi} 
+\item[12.4]\hyperref[12.4]{``Numerical simulation of Rayleigh-Taylor instability by MPS multiphase method''  \underline{X. Wen}, D. C. Wan}
+\end{itemize}
+}\tabularnewline
+\hline 
+12:35-14:00 & \multicolumn{3}{l}{Lunch (Buffet lunch @ ZhongGuanYuan Global Village PKU)} \tabularnewline
+\hline 
+\multirow{2}{*}{14:00-15:05} & \multicolumn{2}{p{\dimexpr0.6\linewidth+0\tabcolsep}|}{\hyperref[13.1]{Session 13: Alternative Formulations and Particle-Based Simulation Techniques}} & Chair: M. B. Liu \tabularnewline
+\cline{2-4} 
+ & \multicolumn{3}{p{\dimexpr0.825\linewidth+0\tabcolsep}}{
+\vspace{-1.5em}
+\begin{itemize}
+\item[13.1] \hyperref[13.1]{``Numerical simulation of particle collision and breakup behavior by SDPH-FVM coupling method'' H. F. Qiang, \underline{F. Z. Chen}}
+\item[13.2] \hyperref[13.2]{``A physics evoked meshfree method'' Z. B. Ma, \underline{Y. Z. Zhao}}
+\item[13.3] \hyperref[13.3]{``Suppression of non-physical voids in the finite volume particle method'' Mohsen H. Moghimi, \underline{Nathan J. Quinlan}}
+\item[13.4] \hyperref[13.4]{``The Hermit-type RRKPM for piezoelectric materials'' \underline{J. C. Ma}, G. F. Wei}
+\end{itemize}
+}\tabularnewline
+\hline 
+\multirow{2}{*}{15:05-16:10} & \multicolumn{2}{l|}{\hyperref[14.1]{Session 14: Other applications of SPH}} & Chair: Stefano Sibilla \tabularnewline
+\cline{2-4} 
+ & \multicolumn{3}{p{\dimexpr0.825\linewidth+0\tabcolsep}}{
+\vspace{-1.5em}
+\begin{itemize}
+\item[14.1] \hyperref[14.1]{``A development of a SPH model for simulation of abrasive-water-jet impacting on a metallic surface'' \underline{X. W. Dong}, Z. L. Li, J. L. Liu}
+\item[14.2] \hyperref[14.2]{``SPH simulation of Couette flow with sinusoidally moving solid boundary'' \underline{H. Q. Li}, H. T. Liu, J. Z. Chang}
+\item[14.3] \hyperref[14.3]{``Application of particle-based computational acoustics to sound propagation and scattering'' \underline{Y. O. Zhang}}
+\item[14.4] \hyperref[14.4]{``Image processing with the SPH method'' \underline{C. Y. Huang}, W. H. Lu, D. Q. Hou, X. Cheng}
+\end{itemize}
+}\tabularnewline
+\hline 
+16:10-16:30 & \multicolumn{3}{l}{Coffee} \tabularnewline
+\hline 
+\multirow{2}{*}{16:30-17:20} & \multicolumn{2}{l|}{\hyperref[15.1]{Session 15: Hydraulic Applications II}} & Chair: M. Rentschler \tabularnewline
+\cline{2-4} 
+ & \multicolumn{3}{p{\dimexpr0.825\linewidth+0\tabcolsep}}{
+\vspace{-1.5em}
+\begin{itemize}
+\item[15.1] \hyperref[15.1]{``Analysis of the hydrological safety of dams using numerical tools: Iber and DualSPHysics'' \underline{J. González-Cao}, O. García-Feal, A. J. C. Crespo, J. M. Domínguez, M. Gómez-Gesteira} 
+\item[15.2] \hyperref[15.2]{``Construction of two-dimensional SPH numerical wave tank'' \underline{J. Y. Wang}, F. Xu, Y. Yang}
+\item[15.3] \hyperref[15.3]{``An SPH numerical wave-current tank'' \underline{M. He}, H. S. Wang, X. F. Gao, W. H. Xu, Y. Shi}
+\end{itemize}
+}\tabularnewline
+\hline 
+17:20 & \multicolumn{3}{l}{Dinner @PKU canteen with card} \tabularnewline
+\hlinewd{1.5pt} 
+\end{tabularx}
+%\end{tabular}

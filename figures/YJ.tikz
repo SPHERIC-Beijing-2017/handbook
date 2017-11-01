@@ -1,0 +1,28 @@
+\begin{tikzpicture}[scale=1]
+\node at (0,-7){\includegraphics[scale=1]{/home/zhou/Dropbox/Apps/ShareLaTeX/SPHeric/figures/YJfloor1.jpg}};
+
+\node at (0,9){\includegraphics[scale=1]{/home/zhou/Dropbox/Apps/ShareLaTeX/SPHeric/figures/YJfloor2.jpg}};
+
+
+\node[white,font=\Large\bf,shape=circle,fill=red,draw=black,thick] at (-3,8.3){A};
+\node[font=\Large\bf,shape=circle,fill=green,draw=black,thick] at (-4.75,12.2){B};
+
+
+\node[white,font=\Large\bf,shape=circle,fill=red,draw=black,thick] at (-3.8,-2){A};
+\node[font=\Large\bf,shape=circle,fill=green,draw=black,thick] at (-5.6,-2.75){B};
+
+
+\node[font=\Huge\bf,right] at (-12,-12) {1$^\mathrm{st}$ floor};
+\node[right,font=\Large] at (-12,-14){A. Room 104 (Registration  Place)};
+\node[right,font=\Large] at (-12,-15){B. Restroom};
+
+
+
+
+\node[font=\Huge\bf,right] at (-12,8) {2$^\mathrm{nd}$ floor};
+\node[right,font=\Large] at (-12,6){A. Room No.2  (Conference Venue)};
+\node[right,font=\Large] at (-12,5){B. Restroom};
+
+
+
+\end{tikzpicture}
